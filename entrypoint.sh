@@ -5,7 +5,7 @@ set -e
 set -- ansible-playbook "$@"
 
 mkdir -p ~/.ssh
-ssh-keyscan -p $TUNNEL_PORT $TUNNEL_HOST >> ~/.ssh/known_hosts
+ssh-keyscan -p $SSH_PORT $SSH_HOST >> ~/.ssh/known_hosts
 
 eval $(ssh-agent -s)
 # this command exposes private key to the job output,

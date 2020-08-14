@@ -6,8 +6,8 @@ Variables required:
 
 - ANSIBLE_VAULT_PASSWORD for ansible vault password
 - SSH_PRIVATE_KEY for remote host connection
-- TUNNEL_HOST for jump host name
-- TUNNEL_PORT for jump host port
+- SSH_HOST for jump host name
+- SSH_PORT for jump host port
 
 Example
 ```
